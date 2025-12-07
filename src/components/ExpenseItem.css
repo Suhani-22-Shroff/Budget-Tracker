@@ -1,0 +1,29 @@
+.expense-item {
+	background: white;
+	margin: 12px auto;
+	padding: 15px;
+	border-radius: 10px;
+	width: 90%;
+	max-width: 500px;
+	display: flex;
+	justify-content: space-between;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-group button {
+	padding: 8px 12px;
+	margin-left: 8px;
+	border-radius: 6px;
+	border: none;
+	cursor: pointer;
+}
+
+.edit-btn {
+	background: #2ecc71;
+	color: white;
+}
+
+.delete-btn {
+	background: #e74c3c;
+	color: white;
+}

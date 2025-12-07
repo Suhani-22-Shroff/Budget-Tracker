@@ -1,0 +1,123 @@
+.expense-list-container {
+	width: 90%;
+	max-width: 900px;
+	margin: 40px auto;
+	padding: 20px;
+	background: #ffffff;
+	border-radius: 14px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.expense-list-title {
+	text-align: center;
+	font-size: 26px;
+	margin-bottom: 20px;
+	font-weight: bold;
+	color: #333;
+}
+
+/* Expense Input Form Container */
+.expense-form-wrapper {
+	margin-bottom: 20px;
+}
+
+/* Expense Items */
+.expense-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #f4f6ff;
+	padding: 14px 18px;
+	border-radius: 10px;
+	margin-bottom: 12px;
+	border-left: 5px solid #4c6ef5;
+	transition: 0.3s ease;
+}
+
+.expense-item:hover {
+	background: #e9ecff;
+}
+
+/* Expense Details */
+.expense-details h4 {
+	margin: 0;
+	font-size: 18px;
+	color: #333;
+}
+
+.expense-details p {
+	margin: 2px 0;
+	color: #555;
+	font-size: 14px;
+}
+
+/* Action Buttons */
+.expense-actions {
+	display: flex;
+	gap: 10px;
+}
+
+.btn-edit,
+.btn-delete {
+	padding: 8px 14px;
+	border: none;
+	cursor: pointer;
+	border-radius: 6px;
+	font-size: 14px;
+	transition: 0.3s ease;
+}
+
+.btn-edit {
+	background: #ffb100;
+	color: white;
+}
+
+.btn-delete {
+	background: #ff4d4d;
+	color: white;
+}
+
+.btn-edit:hover {
+	background: #d99600;
+}
+
+.btn-delete:hover {
+	background: #cc0000;
+}
+
+/* Empty Message */
+.no-expenses {
+	text-align: center;
+	color: #666;
+	font-size: 16px;
+	padding: 20px 0;
+}
+
+/* ----------- MEDIA QUERIES ----------- */
+
+/* Mobile */
+@media (max-width: 600px) {
+	.expense-item {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.expense-actions {
+		width: 100%;
+		justify-content: flex-end;
+		margin-top: 10px;
+	}
+
+	.btn-edit,
+	.btn-delete {
+		padding: 8px 10px;
+		font-size: 12px;
+	}
+}
+
+/* Tablets */
+@media (max-width: 900px) {
+	.expense-list-container {
+		width: 95%;
+	}
+}
